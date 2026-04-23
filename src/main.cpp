@@ -1,4 +1,6 @@
-#include <iost_ream>
-int main(argc, argv){
-    return EXIT_SUCCES;
+#include <iostream>
+int main(int argc, char const *argv[])
+{
+    /* code */
+    return 0;
 }
