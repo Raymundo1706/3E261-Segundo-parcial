@@ -1,32 +1,33 @@
 #include <iostream>
-using namespace std;
+using namespace std; 
 
 int main() {
-    int a; 
-    cout << sizeof(a) << endl;
-    cout << "int: " << sizeof(int) <<  endl;
-    cout << "long: " << sizeof(long) <<  endl;
-    cout << "char: " << sizeof(char) <<  endl;
-    cout << "bool: " << sizeof(bool) <<  endl;
-    cout << "float: " << sizeof(float) <<  endl;
-    cout << "double: " << sizeof(double) <<  endl;
+    int a = 5;
+    cout << "int: " << sizeof(a) << endl;      
+    cout << "long: " << sizeof(long) << endl;   
+    cout << "char: " << sizeof(char) << endl;   
+    cout << "bool: " << sizeof(bool) << endl;   
+    cout << "float: " << sizeof(float) << endl; 
+    cout << "double: " << sizeof(double) << endl; 
     
-    cout << &a << endl; //direccion de memoria
-    cout << a << endl;  //el valor
+    cout << &a << endl;
+    cout << a << endl;
     cout << *(&a) << endl;
-
-    // Líneas de punteros (direcciones de memoria)
-    cout << "puntero int: " << sizeof(int*) << endl;
-    cout << "puntero float: " << sizeof(float*) << endl;
-    cout << "puntero long: " << sizeof(long*) << endl;
-    cout << "puntero char: " << sizeof(char*) << endl;
-    cout << "puntero bool: " << sizeof(bool*) << endl;
-    cout << "puntero double: " << sizeof(double*) << endl;
-
+    cout << sizeof(int*) << endl;
+    cout<< sizeof(long*) << endl;
+    cout<< sizeof(char*) << endl;
+    cout<< sizeof(bool*) << endl;
+    cout<< sizeof(float*) << endl;
+    cout<< sizeof(double*) << endl;
     int* direccion;
-    cout << direccion << endl; //valor 
-    cout << &direccion << endl; //direccion
-    cout << *direccion  << endl; //indirreccion
-
+    cout << direccion << endl;
+    cout << & direccion << endl;
+    cout << * direccion << endl;
+    cout << malloc (4) << endl;
+  int* dir = (int*) malloc(4);
+  int* dir = (int*) malloc(sizeof(int));
+    *dir = 7;
+    cout << *dir << endl;
+    int* dir2 = new int;
     return 0;
 }
